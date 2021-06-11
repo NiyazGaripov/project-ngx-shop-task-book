@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { oneProduct } from '../../../../shared/mocks/3-directives/product-information';
+import { IProduct, oneProduct } from '../../../../shared/mocks/3-directives/product-information';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { oneProduct } from '../../../../shared/mocks/3-directives/product-inform
 })
 export class AppComponent {
   public title = 'Компонент информации о товаре';
-  public product = oneProduct;
+  public product: IProduct = oneProduct;
   public terminalMessage = null;
   public addToCart(value: string): void {
     this.terminalMessage = value;
