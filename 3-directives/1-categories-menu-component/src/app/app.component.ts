@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { categories } from '../../../../shared/mocks/3-directives/categories';
+import {categories, ICategory} from '../../../../shared/mocks/3-directives/categories';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import { categories } from '../../../../shared/mocks/3-directives/categories';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  public categories = categories;
+  public categories: ICategory[] = categories;
   public title = '1. Директивы (Компонент выбора подкатегории на странице рекомендации)';
   public terminalMessage: any = '';
 
