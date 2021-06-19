@@ -10,6 +10,7 @@ export class AppComponent {
   public terminalMessage: FormData = null;
 
   public confirm(event: FormData) {
+    console.log(event);
     this.terminalMessage = event;
   }
 }
