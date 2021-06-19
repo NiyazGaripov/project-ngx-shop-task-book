@@ -46,10 +46,10 @@ describe('[Moдуль 4 - Компонент домашней страницы a
     fixture.detectChanges();
   });
 
-  it('компонент должен иметь свойство products c значением null', () => {
-    expect((component as any).products).toBeDefined(null);
+  it('компонент должен иметь свойство products$ c значением null', () => {
+    expect((component as any).products$).toBeDefined(null);
   });
-  it('компонент должен иметь свойство categories c значением null', () => {
-    expect((component as any).categories).toBeDefined(null);
+  it('компонент должен иметь свойство categories$ c значением null', () => {
+    expect((component as any).categories$).toBeDefined(null);
   });
 });
